@@ -1,0 +1,23 @@
+logging:
+  level:
+    com.vmware.tanzu.demos.sta: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  tracing:
+    enabled: false
+    sampling:
+      probability: 1
+  otlp:
+    metrics:
+      export:
+        enabled: false
+app:
+  marketplace:
+    url: https://sta.az.run.withtanzu.com
+  agent:
+    strategy: buy-lower-stock
+    user: alexandreroman
